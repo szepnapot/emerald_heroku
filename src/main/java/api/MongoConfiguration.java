@@ -16,7 +16,7 @@ public class MongoConfiguration extends AbstractMongoConfiguration {
 
   @Override
   protected String getDatabaseName() {
-    return "heroku_m3qkttcs";
+    return "meals";
   }
 
   @Override
