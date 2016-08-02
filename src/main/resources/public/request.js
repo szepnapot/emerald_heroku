@@ -16,7 +16,7 @@ const request = (function(){
   }
 
   function getAllfromDatabase(callback) {
-    xhrRequest('GET', host, null, callback);
+    xhrRequest('GET', '', null, callback);
   }
 
   function getFilterfromDatabase(filter, callback) {
