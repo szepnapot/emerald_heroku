@@ -16,11 +16,11 @@ const request = (function(){
   }
 
   function getAllfromDatabase(callback) {
-    xhrRequest('GET', host, null, callback);
+    xhrRequest('GET', '', null, callback);
   }
 
   function getFilterfromDatabase(filter, callback) {
-    let url = host + '/?filter='+filter;
+    let url = host + '/?filter=' + filter;
     xhrRequest('GET', url, null, callback);
   }
 
