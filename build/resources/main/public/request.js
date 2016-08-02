@@ -1,7 +1,7 @@
 'use strict';
 
 const request = (function(){
-  const host = "http://localhost:8080/meals";
+  const host = "/meals";
 
   function xhrRequest(method, url, data, callback) {
     const xhr = new XMLHttpRequest();
