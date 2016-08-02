@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="main_cointainer">
+      <aside>
+        <div class="user">
+          <img src="./assets/user.png"style="width:200px;height:200px;">
+        </div>
+        <form class="button" id="my-form" action="#">
+        <div class="buttons">
+          <button class="add_button">Add</button>
+          <button class="delete_button" >Delete</button>
+          <button class="filter_button" >Filter</button>
+          <button class="show_button" >ShowAll</button>
+        </div>
+        <div class="add_cointainer hidden">
+          <input  class="text_input" type="text" placeholder="Food "/>
+          <input  class="calories_input" type="number" placeholder="Number "/>
+          <input  class="date_input"type="datetime" placeholder=" Date "/>
+        </div>
+        <div class="confirm_cointainer hidden">
+          <button class="confirm_button" >Confirm</button>
+          <button class="back_button">Back</button>
+        </div>
+        </form>
+      </aside>
+      <main>
+        <h1> Food List</h1>
+        <ul class="meals">
+        </ul>
+      </main>
+    </div>
+    <h2>Sum of your calories:   <span class="sum"></span> kcal</h2>
+    <script src="request.js"></script>
+    <script src="display.js"></script>
+    <script src="create.js"></script>
+    <script src="index.js"></script>
+    <script src="dom.js"></script>
+  </body>
+</html>
