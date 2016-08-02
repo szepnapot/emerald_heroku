@@ -20,7 +20,7 @@ public class MongoConfiguration extends AbstractMongoConfiguration {
 
   @Override
   public Mongo mongo() throws Exception {
-    return new MongoClient(System.getenv().get('MONGODB_URI'));
+    return new MongoClient(System.getenv().get("MONGODB_URI"));
   }
 
   @Override
