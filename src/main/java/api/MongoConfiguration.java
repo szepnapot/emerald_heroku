@@ -2,6 +2,7 @@ package api;
 
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.mongodb.config.AbstractMongoConfiguration;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
@@ -20,7 +21,9 @@ public class MongoConfiguration extends AbstractMongoConfiguration {
 
   @Override
   public Mongo mongo() throws Exception {
-    return new MongoClient(System.getenv().get("MONGODB_URI"));
+    String textUri = "mongodb://heroku_m3qkttcs:hdeuu31uu8e7p8r4lo6nkcvq0m@ds029675.mlab.com:29675/heroku_m3qkttcs";
+    MongoClientURI uri = new MongoClientURI(textUri);
+    return new MongoClient(uri);
   }
 
   @Override
